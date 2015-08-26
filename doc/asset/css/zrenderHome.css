@@ -9,7 +9,8 @@ body {
 }
 .face {
     height: 1080px;
-    background-color:#181818;
+    /*background-color:#181818;*/
+    background-image: url('../img/wallhaven-237298.jpg');
     margin-bottom: 30px;
     margin-top: -20px;
 }

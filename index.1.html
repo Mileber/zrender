@@ -2,11 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>ZRender</title>
+    <title>TFIVE</title>
     
 
     <script src="doc/asset/js/esl/esl.js"></script>
-
+    
+    <!-- 字体，然并卵 -->
+    <script type="text/javascript" src="http://www.youziku.com/webfont/FastJS/e77867110b8d40eb938e4cc1887445de.js"></script>
 
     <link href="doc/asset/css/zrenderHome.css" rel="stylesheet">
     <link href="doc/asset/css/style_2.css" rel="stylesheet">
@@ -119,7 +121,7 @@
                 var height = Math.ceil(zr.getHeight());
 
                 var i;
-                var n = 100;
+                var n = 50;
                 var shapeList = [];
                 var pos;
                 var len;
@@ -139,7 +141,7 @@
                             xEnd : xStart + len,
                             yEnd : pos,
                             strokeColor : zrColor.random(),
-                            lineWidth : 2
+                            lineWidth : 1
                         },
                         _animationX : Math.ceil(Math.random() * 50),
                         _len : len,
@@ -189,10 +191,10 @@
                         x : width / 2,
                         y : height / 2 - 200,
                         brushType : 'stroke',
-                        strokeColor : 'rgba(255, 255, 255, 0.2)',
+                        strokeColor : 'rgba(255, 255, 255, 0.5)',
                         lineWidth : 3,
                         text : 'TFIVE',
-                        textFont : 'bold 60px verdana',
+                        textFont : 'bold 60px Verdana',
                         textAlign : 'center'
                     },
                     _animationSize : 60,
@@ -231,11 +233,11 @@
                     zlevel : 1,
                     style : {
                         x : width / 2,
-                        y : height / 2-50,
-                        color : 'rgba(0, 229, 0, 1)',
+                        y : height / 2 + 50,
+                        color : 'rgba(220,224,230, 1)',
                         //shadowBlur: 10,
                         //shadowColor : 'rgba(255,215,0,0.8)',
-                        text : '时代在召唤~',
+                        text : '一句话介绍',
                         textFont : 'normal 24px 微软雅黑',
                         textAlign : 'center'
                     },
@@ -323,4 +325,13 @@
         );
     </script>
   </body>
+  
+  <!-- 加载一个字体，然并卵 -->
+  <script  type="text/javascript">
+    /*$youziku.load("#id1", "e77867110b8d40eb938e4cc1887445de", "hdjxyt");*/
+    /*[$youziku.load("#id2", "e77867110b8d40eb938e4cc1887445de", "hdjxyt");]*/
+    $youziku.load(".st-panel", "e77867110b8d40eb938e4cc1887445de", "hdjxyt");
+    $youziku.load(".st-container", "e77867110b8d40eb938e4cc1887445de", "hdjxyt");
+    $youziku.draw();
+   </script>
 </html>
