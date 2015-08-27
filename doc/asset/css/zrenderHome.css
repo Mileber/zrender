@@ -10,7 +10,7 @@ body {
 .face {
     height: 1080px;
     /*background-color:#181818;*/
-    background-image: url('../img/wallhaven-237298.jpg');
+    background: url('../img/universe-the-universe-stars-space-constellations-planets-nebula_1920x1080_sc.jpg');
     margin-bottom: 30px;
     margin-top: -20px;
 }
@@ -39,7 +39,7 @@ body {
 
 .navbar a.brand {
     background:url('../ico/favicon.png') no-repeat 0 10px;
-    margin-left:0
+    margin-left:0;
 }
 .sidebar-nav {
     padding: 9px 0;
